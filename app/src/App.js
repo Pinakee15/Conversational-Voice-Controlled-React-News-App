@@ -1,6 +1,7 @@
 import React , {useEffect , useState} from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
-import NewsCards from './Components/NewsCards/NewsCards'
+import NewsCards from './Components/NewsCards/NewsCards';
+import makeStyles from './Styles.js';
 
 const alanKey = "f13f9a67525c1ad754effa23d50cc4df2e956eca572e1d8b807a3e2338fdd0dc/stage";
 
@@ -18,16 +19,13 @@ const App = ()=> {
                 }
             }
         })
-    });
-    const allNews = newsArticles.map(article=>{
-        return <p>{article['author']}</p>
-    })
-    console.log("This is the new allNews " , allNews)
-
+    }, []);
+    const classes = makeStyles();
     return (
         <div>
-            <h2>React app</h2>
-            {allNews}
+            <div className={classes.logoContainer}>
+                <img className = {classes.Logo} src = "https://st3.depositphotos.com/15087372/37018/v/950/depositphotos_370182698-stock-illustration-microphone-fire-flame-logo-template.jpg" alt ="Logo"/>
+            </div>
             < NewsCards articles = {newsArticles} />
         </div>
     )
