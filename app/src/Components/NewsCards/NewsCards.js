@@ -20,7 +20,7 @@ const NewsCards = ({articles}) => {
                         infoCards.map(infoCard=>(
                         < Grid item xs = {12} sm={12} md ={4} lg={4} className = {classes.infoCard}> 
                             <div className = {classes.card} style = {{backgroundImage:infoCard.bgColor}}>
-                                <Typography variant = "h5">{infoCard.title}</Typography>
+                                <b><Typography variant = "h5">{infoCard.title}</Typography></b>
                                 { infoCard.info ? 
                                     (<Typography variant="h6"> 
                                     <strong><b>
@@ -60,3 +60,6 @@ const NewsCards = ({articles}) => {
 }
 
 export default NewsCards
+
+
+

@@ -21,10 +21,13 @@ const App = ()=> {
         })
     }, []);
     const classes = makeStyles();
+    console.log("this is the class :", classes);
     return (
         <div>
-            <div className={classes.logoContainer}>
-                <img className = {classes.Logo} src = "https://st3.depositphotos.com/15087372/37018/v/950/depositphotos_370182698-stock-illustration-microphone-fire-flame-logo-template.jpg" alt ="Logo"/>
+            <div className={classes.logoContainer}  >
+                {/* <img className = {classes.Logo} src = "https://www.seoclerk.com/pics/551103-1TOqFD1502285018.jpg" alt ="Logo"/> */}
+                <img className = {classes.Logo} src = "https://images.squarespace-cdn.com/content/v1/58764c441e5b6cf25288e201/1556760027273-QM8KIQEHT74034LX5I85/ke17ZwdGBToddI8pDm48kIUEZvCntvRuFrrU4Evvy0AUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdJo7p2UBMf0acwEEEI6kjX1UVIQ5H6RSYRCZnOUY-i9S7NDohP5ZQZYwmi-jCp-7J0/Newsfeed+Logo.png?format=2500w" alt ="Logo"/>
+                {/* <h5 style={{color:"white", fontFamily: "'Playfair Display', serif"}}>NewsFeed</h5> */}
             </div>
             < NewsCards articles = {newsArticles} />
         </div>

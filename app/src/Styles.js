@@ -35,6 +35,7 @@ export default makeStyles((theme) => ({
     margin: '0 12px',
     textAlign: 'center',
     height: '25vmin',
+    zIndex: 500,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
       textAlign: 'center',
@@ -54,8 +55,8 @@ export default makeStyles((theme) => ({
     },
   },
   logoContainer: {
-    padding: '0 3%',
-    display: 'flex',
+    padding: '0px',
+    //display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '100%',
@@ -65,7 +66,7 @@ export default makeStyles((theme) => ({
     },
   },
   Logo: {
-    height: '17vmin',
+    height: '15vmin',
     borderRadius: '15%',
     padding: '0 5%',
     margin: '2% 0',
