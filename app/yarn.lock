@@ -2783,7 +2783,7 @@
     "babel-plugin-macros" "2.8.0"
     "babel-plugin-transform-react-remove-prop-types" "0.4.24"
 
-"babel-runtime@^6.26.0":
+"babel-runtime@^6.26.0", "babel-runtime@6.x.x":
   "integrity" "sha1-llxwWGaOgrVde/4E/yM3vItWR/4="
   "resolved" "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz"
   "version" "6.26.0"
@@ -3418,6 +3418,11 @@
     "string-width" "^4.2.0"
     "strip-ansi" "^6.0.0"
     "wrap-ansi" "^6.2.0"
+
+"clj-fuzzy@^0.3.2":
+  "integrity" "sha1-seU0MJHFIC28UlMoY+HEp4RX8D0="
+  "resolved" "https://registry.npmjs.org/clj-fuzzy/-/clj-fuzzy-0.3.3.tgz"
+  "version" "0.3.3"
 
 "clone-deep@^4.0.1":
   "integrity" "sha512-neHB9xuzh/wk0dIHweyAXv2aPGZIVk3pLMe+/RNzINf17fe0OG96QroktYAUm7SM1PBnzTabaLboqqxDyMU+SQ=="
@@ -6457,6 +6462,14 @@
     "html-escaper" "^2.0.0"
     "istanbul-lib-report" "^3.0.0"
 
+"its-set@^1.1.5":
+  "integrity" "sha512-UQc+xLLn+0a8KKRXRj3OS2kERK8G7zcayPpPULqZnPwuJ1hGWEO8+j0T5eycu7DKXYjezw3pyF8oV1fJkJxV5w=="
+  "resolved" "https://registry.npmjs.org/its-set/-/its-set-1.2.3.tgz"
+  "version" "1.2.3"
+  dependencies:
+    "babel-runtime" "6.x.x"
+    "lodash.get" "^4.4.2"
+
 "jest-changed-files@^26.6.2":
   "integrity" "sha512-fDS7szLcY9sCtIip8Fjry9oGf3I2ht/QT21bAHm5Dmf0mD4X3ReNUf17y+bO6fR8WgbIZTlbyG1ak/53cbRzKQ=="
   "resolved" "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-26.6.2.tgz"
@@ -7303,6 +7316,11 @@
   "integrity" "sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0="
   "resolved" "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz"
   "version" "3.0.0"
+
+"lodash.get@^4.4.2":
+  "integrity" "sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk="
+  "resolved" "https://registry.npmjs.org/lodash.get/-/lodash.get-4.4.2.tgz"
+  "version" "4.4.2"
 
 "lodash.memoize@^4.1.2":
   "integrity" "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
@@ -11733,6 +11751,15 @@
   "integrity" "sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ=="
   "resolved" "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz"
   "version" "1.2.3"
+
+"words-to-numbers@^1.5.1":
+  "integrity" "sha512-uvz7zSCKmmA7o5f5zp4Z5l24RQhy6HSNu10URhNxQWv1I82RsFaZX3qD07RLFUMJsCV38oAuaca13AvhO+9yGw=="
+  "resolved" "https://registry.npmjs.org/words-to-numbers/-/words-to-numbers-1.5.1.tgz"
+  "version" "1.5.1"
+  dependencies:
+    "babel-runtime" "6.x.x"
+    "clj-fuzzy" "^0.3.2"
+    "its-set" "^1.1.5"
 
 "workbox-background-sync@^5.1.4":
   "integrity" "sha512-AH6x5pYq4vwQvfRDWH+vfOePfPIYQ00nCEB7dJRU1e0n9+9HMRyvI63FlDvtFT2AvXVRsXvUt7DNMEToyJLpSA=="

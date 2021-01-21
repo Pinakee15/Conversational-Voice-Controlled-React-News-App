@@ -56,7 +56,7 @@ export default makeStyles((theme) => ({
   },
   logoContainer: {
     padding: '0px',
-    //display: 'flex',
+    display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '100%',
