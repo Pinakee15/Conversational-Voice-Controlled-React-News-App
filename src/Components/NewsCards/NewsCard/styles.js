@@ -1,11 +1,3 @@
-// import {makeStyles} from '@material-ui/core' ;
-
-// export default makeStyles({
-//     media : {
-//         height : "250px"
-//     }
-// })
-
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles({
@@ -23,12 +15,9 @@ export default makeStyles({
     flexDirection: 'column',
     justifyContent: 'space-between',
     borderBottom: '10px solid white',
-    margin : "0.7vw"
   },
   activeCard: {
-    borderTop: '10px solid #22289a',
-    backgroundColor : '#ffffcc',
-    boxShadow : "8px 10px 5px grey"
+    borderBottom: '10px solid #22289a',
   },
   grid: {
     display: 'flex',
@@ -47,14 +36,3 @@ export default makeStyles({
     justifyContent: 'space-between',
   },
 });
-
-//2. Info Cards Array:
-
-
-
-// 3. Alan AI Logo Image:
-// const //alanLogoSrc = 'https://alan.app/voice/images/previews/preview.jpg';
-
-// 4. App styles.js:
-//import { makeStyles } from '@material-ui/core/styles';
-

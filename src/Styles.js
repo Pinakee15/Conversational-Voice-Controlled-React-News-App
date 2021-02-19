@@ -35,7 +35,6 @@ export default makeStyles((theme) => ({
     margin: '0 12px',
     textAlign: 'center',
     height: '25vmin',
-    zIndex: 500,
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
       textAlign: 'center',
@@ -55,7 +54,7 @@ export default makeStyles((theme) => ({
     },
   },
   logoContainer: {
-    padding: '0px',
+    padding: '0 5%',
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -65,13 +64,13 @@ export default makeStyles((theme) => ({
       textAlign: 'center',
     },
   },
-  Logo: {
-    height: '15vmin',
+  alanLogo: {
+    height: '27vmin',
     borderRadius: '15%',
     padding: '0 5%',
-    margin: '2% 0',
+    margin: '3% 0',
     [theme.breakpoints.down('sm')]: {
-      height: '20vmin',
+      height: '35vmin',
     },
   },
 }));
